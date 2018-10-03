@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SUBMIT</title>
+        <meta name="description" content="You do you.">
+        {% load static %}
+    </head>
+    <body>
+        <div id="subinfo">
+        <h1>You have submitted this form {{ request.session.counter }} time(s).</h1>
+            Name:{{ request.session.full_name }}<br/>
+            Dojo Location:{{ request.session.loc }}<br/>
+            Favorite Language:{{ request.session.lang }}<br/>
+            Comment:{{ request.session.comment }}<br/>
+            <a href = '/'><input type='submit' value = 'go away'></a>
+       </div>
+    </body>
+</html>

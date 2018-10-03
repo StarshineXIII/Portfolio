@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>This is you.</title>
+        {% load static %}
+        <meta name="description" content="Say something.">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Dojo Survey</h1>
+        <form action ='/process' method = 'post'>
+            {% csrf_token %}    
+            <label>Your Name:<input type="text" name="full_name"></label>
+            <br/>
+            <label>Dojo Location:
+            <select name="loc">
+                <option value="seattle">Seattle</option>
+                <option value="tulsa">Tulsa</option>
+                <option value="mars">Malacandra</option>
+            </select></label>
+            <br/>
+            <label>Favorite Language:
+            <select name="lang">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select></label>
+            <br/>
+            <label>Comment (optional):<br/>
+            <textarea name='comment'></textarea>
+            <br/><input type='submit' value='Process'></label>
+        </form>
+        </div>
+    </body>
+</html>

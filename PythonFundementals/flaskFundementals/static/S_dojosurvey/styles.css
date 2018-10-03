@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    width: 800px; height: 800px;
+    border: 1pz solid black;
+}
+#subinfo{
+    width: 800px; height: 800px;
+    border: 1pz solid black;
+}

@@ -1,0 +1,48 @@
+#container{
+    background-color: cyan;
+    width: 900px;
+    height: 1000px;
+}
+#header{
+    background-color: black;
+    width: 900px;
+    height: 50px;
+    display: inline-block;
+    opacity: 5%;
+}
+#header2{
+    background-color: red;
+    width: 900px;
+    height: 50px;
+    display: inline-block;
+    opacity: 5%;
+}
+#track1container{
+    background-color: white;
+    width: 700px;
+    height: 430px;
+    margin-top: 98px;
+    margin-left: 93px;
+    opacity: 5%;
+}
+#track2container{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 34px;
+    margin-top: 0px;
+}
+.track{
+    background-color: grey;
+    width: 197px;
+    height: 180px;
+    margin:16px;
+
+    display: inline-block;
+}
+.track2{
+    background-color: grey;
+    width: 197px;
+    height: 180px;
+    margin: 16px;
+    display: inline-block;
+}

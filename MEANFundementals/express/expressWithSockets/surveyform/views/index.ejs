@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let socket = io.connect();
+
+            $("submit_button").click(function () {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    socket.emit("posting_form", {
+                            "name": "name",
+                            "loc": "loc",
+                            "lang": "lang",
+                            "comment": "comment"
+                        }
+
+                    });
+            });
+
+
+
+
+
+
+
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <form id="survey" action="results" method="post">
+        <label for="name" id="name">Your Name:</label>
+        <input type="text" name="name">
+        <br>
+
+        <label for="loc">Dojo Location:</label>
+        <select name="loc" id="loc">
+            <option value="Tulsa">Tulsa</option>
+            <option value="Seattle">Seatle</option>
+            <option value="Malacandra">Mars</option>
+        </select>
+        </p>
+        <label for="lang" id="lang">Favorite Language:</label>
+        <select name="lang">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+        </select>
+        <br>
+        <label for="comment" id="comment">Comment (optional):</label>
+        <br>
+        <textarea name="comment"></textarea>
+        <br>
+        <input type="submit" value="SUBMIT" id="submit_button">
+    </form>
+</body>
+
+</html>

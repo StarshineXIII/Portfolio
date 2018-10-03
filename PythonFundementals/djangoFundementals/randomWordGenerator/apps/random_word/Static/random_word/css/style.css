@@ -1,0 +1,19 @@
+*{
+    margin: auto;
+    text-align: center;}
+p {
+    height: 25px;
+    width: 250px;
+    margin-top: 15px;
+    
+    font-size: 20px;
+}
+h1 {
+    height: 50px;
+    width: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 49px;
+    border: solid 1px black;
+
+}

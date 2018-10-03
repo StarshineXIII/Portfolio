@@ -1,0 +1,143 @@
+*(
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    
+)
+
+body{
+    background: black;
+}
+#container{
+    background-color: purple;
+    width: 970px;
+    height: 1065px;
+    margin-left: 20px;
+}
+#header{
+    background-color: silver;
+    width: 970px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.projects{
+    width:292px;
+    height:150px;
+}
+#top{
+    width: auto;
+    height: 300px;
+}
+img{
+    border-color:gray;
+    margin-bottom: 20px;
+}
+#aboutmeheader{
+    background-color: silver;
+    height: 50px;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    font-family: Comic Sans MS, cursive, sans-serif
+}
+h4{
+    text-align: right;
+    color: black;
+    font-size: 16px;
+    font-family: arial, Helvetica, sans-serif;
+}
+
+#aboutme{
+    background-color:white;
+    width: 480px;
+    height: 280px;
+    position: absolute;
+    display: inline-block;
+}
+#programs{
+
+    width: 929px;
+    height: 565px;
+    margin-left: 23px;
+    position: absolute;
+}
+.programblocks{
+
+    width: 292px;
+    height: 565px;
+    vertical-align: center;
+    display: inline-block;
+}
+.dev{
+    background-color: white;
+    width: 292px;
+    height: 325px;
+}
+.dev2{
+    background-color: black;
+    width: 292px;
+    height: 160px;
+}
+.devtext{
+    background-color: rgb(90, 90, 90);
+    text-indent: 7px;
+    color: white;
+    font-size: 22px;
+    font-family: arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 292px;
+}
+.devdigress{
+    word-wrap: normal;
+    font-family: arial, Helvetica, sans-serif;
+    text-align:top;
+    margin: 0;
+}
+.tech{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+button{
+    width: auto;
+    background-color: green;
+    border: 1px solid black;
+    box-shadow:
+    padding:
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: arial, Helvetica, sans-serif;
+    height: 30px;
+}
+#footer{
+    background-color: white;
+    width: 928px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+#email{
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+.textlink{
+    margin: 0;
+    padding:0;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+.link{
+    margin: 0;
+    padding: 0;
+    
+}

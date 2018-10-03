@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+         function magic_miley(x, y){
+
+         let result = x * y;
+         return(result);
+         }
+         magic_miley(5, 2);
+        
+
+         function magic_mary(x, y){
+         let result = x * y;
+         return(result);
+         }
+         magic_mary(0, 0)
+
+        function magic_marc(x, y){
+        for(var i=0; i<x.length; i++){
+        x[i] = x[i] * y;
+        }
+        return(x);
+        }
+        magic_marc([1,2,3], 2)
+
+
+        function magic_mike(x, y){
+        let result = x * y;
+        if (typeof x || y == ""){
+        print; "Error: Can not multiple by string"
+        }
+        return(result);
+        }
+        magic_mike(7, 'three')
+
+    
+     let test1 = magic_miley(5, 2);
+     console.log(test1);
+
+     let test2 = magic_mary(0, 0);
+     console.log(test2);
+
+    let test3 = magic_marc([1, 2, 3], 2);
+    console.log(test3);
+
+    let test4 = magic_mike(7, "three");
+    console.log(test4);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

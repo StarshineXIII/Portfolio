@@ -1,0 +1,86 @@
+1.Each document you insert into this collection should have the following format: ({name: STRING, home_state: STRING, lucky_number: NUMBER, birthday: {month: NUMBER, day: NUMBER, year: NUMBER}})
+Create 5 students with the appropriate info.
+
+db.students.save({name: 'Grace', home_state: 'Oklahoma', lucky_number: 12, birthday: {month: 8, day: 12, year: 1991}})
+
+
+2.Retrieve all students who are from California (San Jose Dojo) or Washington (Seattle Dojo).
+
+db.students.find({home_state: 'Oklahoma'})
+
+
+3.Get all students whose lucky number is:
+
+//Students with lucky number greater than 3.
+
+
+db.students.find({lucky_number: {$gt: 3}})
+
+
+//less than or equal to 10
+
+db.students.find({lucky_number: {$lte: 10}})
+
+
+//between 1 and 9 (inclusive)
+
+ db.students.find({lucky_number: {$in: [1,9]}})
+
+(https://docs.mongodb.com/manual/reference/operator/query/)
+
+
+4.Add a field to each student collection called 'interests' that is an ARRAY.  It should contain the following entries: 'coding', 'brunch', 'MongoDB'. Do this in ONE operation.
+
+db.students.updateMany({}, {$set: {'interests': ['brunch', 'coding', 'MongoDB']}})
+
+
+5.Add some unique interests for each particular student into each of their interest arrays.
+
+db.students.update({name: 'Grace'},{$push:{interests: 'games'}})
+
+
+6.Remove the interest you just added.
+
+db.students.update({name: 'Stratton'},{$pull:{interests: 'stories'}})
+
+
+7.Remove all students who are from California (or Washington).
+
+db.students.deleteMany({home_state: 'Washington'})
+
+
+8.Remove a student by name.
+
+db.students.remove({name: 'Grace'})
+
+
+9.Remove a student whose lucky number is greater than 5 (JUST ONE)
+
+db.students.deleteOne({lucky_number: {$gt: 5}})
+
+
+10.Add a field to each student collection called 'number_of_belts' and set it to 0.
+
+db.students.updateMany({},{$set:{'number_of_belts': 0 }})
+
+(https://docs.mongodb.com/manual/tutorial/update-documents/)
+
+
+11.Increment this field by 1 for all students in Washington (Seattle Dojo).
+
+db.students.updateMany({home_state: 'Washington'},{$set:{'number_of_belts': 1}})
+
+
+12.Rename the 'number_of_belts' field to 'belts_earned'
+
+db.students.updateMany({}, {$rename:{'number_of_belts':'belts_earned'}})
+
+
+13.Remove the 'lucky_number' field.
+
+db.students.updateMany({}, {$unset: {'lucky_number':""}})
+
+
+14.Add a 'updated_on' field, and set the value as the current date.
+
+db.students.updateMany({}, {$currentDate: {'updated_on': true}})

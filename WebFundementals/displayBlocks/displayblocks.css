@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#background{
+    background-color: tan;
+    height: 614px; width: 647px;
+    padding: 20px;
+}
+#title{
+    margin: 10px 0 0 100px;
+}
+h1{
+    display: inline-block;
+}
+img{
+    height: 50px; width: 100px;
+}
+#boxholder{
+    height: 529px; width: 646px;
+    margin: 10px 0 0 0;
+}
+.blockblue{
+    background-color: blue;
+    width: 100px;
+    padding:10px;
+    border: 3px solid black;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.blockred{
+    background-color: indianred;
+    width: 100px;
+    padding: 10px;
+    border: 3px solid black;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.blockred img{
+    height: 100px; width: 100px;
+}
+.blockblue img{
+    height: 100px; width: 100px;
+}

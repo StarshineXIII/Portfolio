@@ -1,0 +1,36 @@
+<h2>Total Gold: {{ allGold }}</h2>
+<a href="/reset">Reset</a>
+<div id="row">
+    <div class="box">
+        <h3>Farm</h3>
+        <p>(earns 2-5 gold)</p>
+        <form (submit)="submit(1)">
+            <input type="submit" name="farm" value="Farm!">
+        </form>
+    </div>
+    <div class="box">
+        <h3>Cave</h3>
+        <p>(earns 5-10 gold)</p>
+        <form (submit)="submit(2)">
+            <input type="submit" name="cave" value="Cave!">
+        </form>
+    </div>
+    <div class="box">
+        <h3>House</h3>
+        <p>(earns 7-15 gold)</p>
+        <form (submit)="submit(3)">
+            <input type="submit" name="house" value="House!">
+        </form>
+    </div>
+    <div class="box">
+        <h3>Casino</h3>
+        <p>(earns up to 100 gold)</p>
+        <form (submit)="submit(4)">
+            <input type="submit" name="casino" value="Casino!">
+        </form>
+    </div>
+    <p id="label">Activity:</p>
+    <div id="activity">
+        <p *ngFor="let each of activity">{{ each }}</p>
+    </div>
+</div>

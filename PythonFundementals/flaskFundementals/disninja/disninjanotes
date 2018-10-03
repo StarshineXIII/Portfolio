@@ -1,0 +1,47 @@
+Static webpage
+create route for '/ninja/<arg>
+Grab the parameter
+
+ninja // undefined
+/ninja/blue
+/ninja/box
+ninja = request.args.get('ninja') # 'blue'
+/ninha/red
+ninja = request.args.get('ninja') # red
+
+
+string literal looks like 'this'
+string variable looks like anything blahblahImaStringVariable -> 'Contents of a string variable is a string literal'
+
+ninjas[ninja] -> '../../static/S_disninja/raphael.jpg'
+if red
+elif purple
+elif orange
+elif blue
+else
+
+if ninja == red
+
+
+Flask is a loading a file called nindex.html
+projectRoot/
+    src/
+        disninja.py
+        myninja.py
+        ethansninja.py
+    static/
+        images/
+            img1.png
+            img2.png
+        css/
+        html/
+            index.html
+            ninja/
+                ninjapage.html
+
+
+
+../images/img1.png
+../../images/img2.png
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Could even have a class Game to oversee the actual game part of the game.
+        class Deck{
+            constructor(){
+                this.suits = ["Clubs","Hearts","Diamonds","Spades"]; //clubs, hearts, diamonds, spades
+                this.values = ["2","3","4","5","6","7","8","9","10","Joker","Queen","King","1"]; //jack, queen, king, 1ace
+                this.cards = [];
+                this.reset(); //looping through suites & values by calling the reset function
+                this.discardPile = [];
+            }
+            shuffle(){  //shuffle function
+                this.reset(); // by removing this you can shuffle only what's left in the deck
+                var m = this.cards.length, t, i;
+                // While there remain elements to shuffle...
+                while(m){
+                    // Pick a remaining element...
+                    i = Math.floor(Math.random() * m--);
+                    // And swap it with the element.
+                    t = this.cards[m];
+                    this.cards[m] = this.cards[i];
+                    this.cards[i] = t;
+                }
+                return this.cards;
+            }
+
+            reset(){ //reset function
+                this.cards = [];
+                this.discardPile = [];
+                for(var j = 0; j < this.suits.length; j++){
+                    for(var a = 0; a < this.values.length; a++){
+                        this.cards.push(this.suits[j] + this.values[a]); //loops through suites & values to make an array.length of 52
+                    }
+                }
+                // return this.cards; Will return undefined without the return statement, but the function is still going through.
+            }
+            
+            deal(name){
+                // var m = this.cards.length, i; // the var declarations are used to grab a card from a random deck position.
+                // i = Math.floor(Math.random() * m);
+                name.hand.push(this.cards[0]); // Puts the top card in our player's hand who is defined by name
+                this.cards.splice(0,1); // Takes out one card from the index position of i
+                return this;
+            }
+        }
+
+        class Player{
+            constructor(name){
+                this.name = name;
+                this.hand = [];
+            }
+
+            take(deck){ //method
+                deck.deal(this);
+                return this;
+            }
+            discard(deck, card){ //method
+                var value = this.hand[card]; //value of the card at that position
+                deck.discardPile.push(value); // pushes value to the discardPile
+                this.hand.splice(card,1);
+                return this.hand;
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
