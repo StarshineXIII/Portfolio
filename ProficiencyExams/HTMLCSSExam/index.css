@@ -1,0 +1,200 @@
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#header, #content, #footer{
+    margin: 5px 0 0 20px;
+    /* opacity: .5; */
+}
+
+#page{
+    /* background-image: url('option-a.jpg'); */
+    background-repeat: no-repeat;
+    height: 1500px;
+    width: 645px;
+    padding: 30px;
+}
+
+/* Top half advert and navigation bars */
+
+#header{
+    width: 600px; height: 328px;
+}
+#header p{
+    height: 11px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    margin: -4px 0 0 4px;
+}
+#nav{
+    width: 595px; height: 38px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background: linear-gradient(white, lightgray);
+    margin: 7px 0 0 2px;
+
+}
+#nav h1{
+    display: inline-block;
+    font-size: 12px;
+    padding: 12px 10px 10px 10px;
+    margin-left: 1px;
+    border-right: 1px solid #c4c4c4;
+    height: 17px;
+    vertical-align: top;
+}
+#searchicon{
+    margin: 0 0 11px -12px;
+    position: relative;
+}
+#search{
+    border-radius: 15px;
+    width: 115px; height: 16px;
+    background-color: white;
+    position: relative;
+    margin: 9px 0 0 89px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* image and small nav bar */
+
+#main{
+    margin: 11px 0 0 3px;
+}
+#software{
+    width: 592px; height: 25px;
+    background-color: #414141;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    margin: -5px 0 0 3px;
+    padding-left: 3px;
+}
+#software span{
+    margin-left: 3px;
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+    font-weight: none;
+}
+#software p{
+    color: #5babe6;
+    display: inline-block;
+}
+
+/* Discover the Accordance Advantage */
+
+#content{
+    width: 598px; height: 340px;
+    margin-top: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background: linear-gradient(white,#f1f1f1);
+}
+#storelink{
+    width: 596; height: 68px;
+    border-radius: 4px;
+    background-color: white;
+}
+#storelink h1{
+    display: inline-block;
+    font-size: 19px;
+    color: #c4c4c4;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+#storelink button{
+    width: 196px; height: 27px;
+    border-radius: 3px;
+    border: #4a84ab;
+    background-color: #4a84ab;
+    padding: 5px; margin-left: 33px;
+    display:inline-block;
+    font-size: 15px;
+}
+
+/* Options */
+
+
+#contentholder{
+    width: 578px; height: 206px;
+    padding: 18px 10px 10px 10px;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+}
+.options{
+    width: 144px; height: 170px;
+    display: inline-block;
+    color: black;
+    font-size: 10px;
+    vertical-align: top;
+}
+.title{
+    height: 24px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.title img{
+    width: 25px; height: 24px;
+    margin-left: 5px;
+}
+.options p{
+    font-size: 9px;
+    color: black;
+    padding: 15px 0 13px 9px;
+}
+.title img{
+    vertical-align: middle;
+}
+.preview img{
+    padding: 0 0 5px 6px;
+}
+button{
+    background-color: #5babe7;
+    border: #5babe7;
+    border-radius: 3px;
+    width: 124px; height: 20px;
+    margin: 0 9px 0 9px;
+    color: white;
+    font-size: 9px;
+}
+/* Directory */
+
+#footer{
+    width: 600px; height: 196px;
+    margin-top: 37px;
+    border-bottom: 1px solid #c4c4c4;
+}
+#footer h1{
+    width: 90px; height: 12px;
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+    margin: 23px 0 0 0;
+    vertical-align: top;
+    font-size: 9px;
+    font-weight: bold;
+}
+#holder{
+    width: 600px; height: 137px;
+}
+.info{
+    width: 90px; height: 137px;
+    margin-right: 10px;
+    border-top: 1px solid #c4c4c4;
+    display: inline-block;
+    vertical-align: top;
+}
+.info p{
+    font-size: 8px;
+    margin-top: 9px;
+}
+#contactus{
+    width: 600px; height: 11px;
+    margin-top: 16px;
+    font-size: 8px;
+}

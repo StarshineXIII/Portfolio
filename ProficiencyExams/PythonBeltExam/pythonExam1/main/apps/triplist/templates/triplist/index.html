@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+  </head>
+  <body>
+
+      <h1>Welcome back, {{ user.name }} </h1>
+
+    <p>Your Trip Schedules:</p>
+    <table border=1>
+      <tr>
+        <th>Destination</th>
+        <th>Travel Start Date</th>
+        <th>Travel End Date</th>
+        <th>Plan</th>
+      </tr>
+
+      {%for my in mine%}
+
+      <tr>
+        <td><a href="{% url 'triplist:item' my.id %}"></a></td>
+        <td></td>
+        <td></td>
+        <td>travel end</td>
+        <td>plan</td>
+        <!-- {% if my.creator.id == user.id %}
+        <td><a href="{% url 'triplist:delete' my.id %}">Delete</a></td>
+        {% else %}
+        <td><a href="{% url 'triplist:remove' my.id %}">Remove from my triplist</a></td> -->
+        {% endif %}
+      </tr>  
+      {%endfor%}
+    </table>
+
+    <!-- </table>
+    <p>Other User's Travel Plans:</p>
+    <table border=1>
+      <tr>
+        <th>Name</th>
+        <th>Destination</th>
+        <th>Travel Start Date</th>
+        <th>Travel End Date</th>
+        <th>Do You Want To Join?</th>
+      </tr>
+      {%for other in others%}
+      <tr>
+        <td><a href="{% url 'triplist:item' other.id %}">{{other.name}}</a></td>
+        <td>{{other.creator.name}}</td>
+        <td>{{other.created_at}}</td>
+        <td>travel end date</td>
+        <td><a href="{% url 'triplist:addWish' other.id %}">JOIN</a></td>
+      </tr>
+      {% endfor %} -->
+    </table>
+    <a href="{% url 'triplist:create' %}">Add Travel Plan</a>
+    <a href="{% url 'user:logout' %}">Log Out</a>
+  </body>
+</html>
